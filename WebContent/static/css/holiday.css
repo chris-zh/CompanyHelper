@@ -1,0 +1,133 @@
+@CHARSET "UTF-8";
+.empname {
+	float: left;
+	margin: 5px;
+	margin-left: 20px;
+}
+
+.holidayNum {
+	float: right;
+	margin: 5px;
+	margin-right: 23px;
+}
+
+a.detailBtn {
+	line-height: 20px;
+	height: 20px;
+	width: 52px;
+	color: #8D8CA1;
+	/*background-color: #4a8cf7;*/
+	font-size: 14px;
+	font-weight: lighter;
+	border: 0px solid #dcdcdc;
+	box-shadow: inset 0px 0px 0px 0px #ffffff;
+	text-align: center;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.detailBtnDiv {
+	margin: 5px;
+	margin-right: 0px;
+	float: right;
+	width: 55px;
+	height: 20px;
+	text-align: center;
+}
+
+div.holidayshort {
+	margin-top: 10px;
+	width: 679px;
+	height: 30px;
+	border: #8b8d72 dotted 1px;
+	border-left: 0px;
+	border-right: 0px;
+}
+
+div.holidaydetail {
+	width: 680px;
+	/*min-height: 150px;*/
+	padding-bottom: 2px;
+	margin-bottom: 10px;
+	background: #fff;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .32);
+	border: 0px;
+	overflow: hidden;
+}
+
+.holidayToggle {
+	width: 680px;
+	height: 20px;
+	margin: 0 auto;
+}
+
+.toggleDiv {
+	float: left;
+	width: 32.95%;
+	height: 100%;
+	background: #F5F5F5;
+	border-left: white solid 2px;
+	text-align: center;
+}
+
+.toggleDiv.selected{
+	background: #FFFFFF;
+}
+
+.toggleDiv.hovered{
+	background: #D8D8D8;
+}
+
+.toggleDiv span {
+	margin: 1px;
+	display: block;
+}
+
+div.detailPanel {
+	min-height: 80px;
+}
+
+div.detailPanel div {
+	width: 99.2%;
+	height: 18px;
+	margin-top: 2px;
+}
+
+div.detailPanel div span {
+	display: block;
+	float: left;
+	text-align: left;
+}
+
+div.detailPanel div span.sp1 {
+	width: 200px;
+	margin-left: 35px;
+}
+
+div.detailPanel div span.sp2 {
+	width: 200px;
+	margin-left: 40px;
+}
+
+div.detailPanel div span.sp3 {
+	margin-left: 65px;
+	width: 100px;
+}
+
+.unused {
+	/*background: #E9FBEC;*/
+	background: #F5F5F5;
+	color: #139D68;
+}
+
+.used {
+	/*background: #FFF4F4;*/
+	background: #F5F5F5;
+	color: #E53A3A;
+}
+
+.sumHoliday {
+	/*background: #F1FCFF;*/
+	background: #F5F5F5;
+	color: #097BAD;
+}

@@ -1,0 +1,217 @@
+@CHARSET "UTF-8";
+
+
+/*文本区域 start*/
+
+.stack {   
+	width: 95%;
+	height: 328px;
+	float: left;
+	margin-left: 0px;
+	margin-right: 15px;
+	margin-top: 10px;	
+    padding-bottom: 12px;
+
+ 
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    
+    -webkit-box-shadow: 0px 0px 9px rgba(121,126,133, 0.15);
+    -moz-box-shadow: 0px 0px 9px rgba(121,126,133, 0.15);
+    box-shadow: 0px 0px 9px rgba(121,126,133, 0.15);
+}
+
+    .stack .layer_1 {
+        background-color: #fdfeff;
+		height: 100%;
+        
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        
+        -webkit-box-shadow: 0px 1px 2px rgba(80,83,87, 0.25);
+        -moz-box-shadow: 0px 1px 2px rgba(80,83,87, 0.25);
+        box-shadow: 0px 1px 2px rgba(80,83,87, 0.25);
+    }
+    
+        .stack .layer_1 .layer_2 {
+            background-color: #fdfeff;
+			height: 100%;
+            
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            
+            -webkit-box-shadow: 0px 1px 0 rgba(61,64,67, 0.2);
+            -moz-box-shadow: 0px 1px 0 rgba(61,64,67, 0.2);
+            box-shadow: 0px 1px 0 rgba(61,64,67, 0.2);
+        }
+        
+            .stack .layer_1 .layer_2 .layer_3 {
+                background-color: #fdfeff;
+				height: 100%;
+                border: 1px solid #dcdde1;
+                padding: 5px 5px;
+                
+                font: normal 15px Arial, Helvetica, sans-serif;
+                line-height: 20px;
+                color: #3a3b3c;
+                
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                border-radius: 3px;
+            }
+            
+                .stack .layer_1 .layer_2 .layer_3 .contents {
+                    width: 100%;
+                    height: 328px;
+                    margin: 0;
+                    padding: 0 6px 0 0;
+                    border: 1px solid transparent;
+                    background: transparent;
+                    resize: none;
+                    overflow-x: hidden;
+                    overflow-y: auto;
+                    /*white-space: pre-wrap; 换行控制*/
+                    
+                    font: normal 13px Arial, Helvetica, sans-serif;
+                    line-height: 20px;
+                    color: #3a3b3c;
+                }
+                
+                .stack .layer_1 .layer_2 .layer_3 .contents.monospace {
+                    font: normal 12px Monaco, 'Courier New', monospace;
+                    line-height: 18px;
+                }
+.stack.empty .layer_1 .layer_2 .layer_3 .contents {
+    text-align: center;
+    font: normal 18px Arial, sans-serif;
+    color: #aaacb0;
+}
+
+/*文本区域 结束*/
+
+span.inp {
+	display: block;
+	/*border: 1px solid #c3c3c3;*/
+	height: 25px;
+	padding: 2px;
+	padding-left: 21px;
+    font-size: 11px;
+	text-align:left;
+
+}
+
+span.exeSpan{
+	float:right;
+	margin-right:21px;
+	margin-top:1px;
+}
+
+.inp input{
+	width:540px;
+	border:0px;
+	font-size:13px;
+	height: 10px;
+	padding:5px;
+	vertical-align:middle;
+	margin-bottom: 3px;
+	margin-left: 8px;
+}
+
+input#hessian_interface{
+	margin-left:19px;
+}
+
+.hessian_paras{
+	width: 100%;
+	overflow:hidden;
+	margin-top:6px;
+}
+
+
+/*执行按钮*/
+a.exeBtn{
+  line-height:75px;
+  height:75px;
+  width:75px;
+  color:#777777;
+  background-color:#ededed;
+  font-size:16px;
+  font-weight:normal;
+  font-family:Arial;
+  background:-o-linear-gradient(top, #ededed 5%, #f5f5f5 100%);
+  background:-ms-linear-gradient(top, #ededed 5%, #f5f5f5 100%);
+  background:linear-gradient(to bottom, #ededed 5%, #f5f5f5 100%);
+  background:-webkit-linear-gradient(top, #ededed 5%, #f5f5f5 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#f5f5f5',GradientType=0);
+  border:1px solid #dcdcdc;
+  border-top-left-radius:6px;
+  border-top-right-radius:6px;
+  border-bottom-left-radius:6px;
+  border-bottom-right-radius:6px;
+  box-shadow: inset 0px 0px 0px 0px #ffffff;
+  text-align:center;
+  display:inline-block;
+  text-decoration:none;
+}
+a.exeBtn:hover{
+  background-color:#f5f5f5;
+  background:-webkit-gradient(linear, left top, left bottom, color-start(0.05, #f5f5f5), color-stop(1, #ededed));
+  background:-o-linear-gradient(top, #f5f5f5 5%, #ededed 100%);
+  background:-ms-linear-gradient(top, #f5f5f5 5%, #ededed 100%);
+  background:linear-gradient(to bottom, #f5f5f5 5%, #ededed 100%);
+  background:-webkit-linear-gradient(top, #f5f5f5 5%, #ededed 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#ededed',GradientType=0);
+}
+/**/
+
+div.areatag{
+	width: 2%;
+	font-size: 13px;
+    /* border: red solid 1px; */
+    height: 74px;
+    float: left;
+    margin-left: 4.5px;
+    margin-top: 13px;
+    color: #777777;
+    background: #DCDDE1;
+}
+div.areatag span{
+    background: #E8E8E8;
+}
+a.fm{
+  line-height:18px;
+  height:19px;
+  width:13px;
+  color:#777777;
+  background-color:#ededed;
+  font-size:8px;
+  font-weight:bold;
+  font-family:Arial;
+  background:-webkit-gradient(linear, left top, left bottom, color-start(0.05, #ededed), color-stop(1, #f5f5f5));
+  background:-moz-linear-gradient(top, #ededed 5%, #f5f5f5 100%);
+  background:-o-linear-gradient(top, #ededed 5%, #f5f5f5 100%);
+  background:-ms-linear-gradient(top, #ededed 5%, #f5f5f5 100%);
+  background:linear-gradient(to bottom, #ededed 5%, #f5f5f5 100%);
+  background:-webkit-linear-gradient(top, #ededed 5%, #f5f5f5 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#f5f5f5',GradientType=0);
+  border:1px solid #dcdcdc;
+  -moz-box-shadow: inset 0px 0px 0px 0px #ffffff;
+  -webkit-box-shadow: inset 0px 0px 0px 0px #ffffff;
+  box-shadow: inset 0px 0px 0px 0px #ffffff;
+  text-align:center;
+  display:inline-block;
+  text-decoration:none;
+}
+a.fm:hover{
+  background-color:#f5f5f5;
+  background:-webkit-gradient(linear, left top, left bottom, color-start(0.05, #f5f5f5), color-stop(1, #ededed));
+  background:-moz-linear-gradient(top, #f5f5f5 5%, #ededed 100%);
+  background:-o-linear-gradient(top, #f5f5f5 5%, #ededed 100%);
+  background:-ms-linear-gradient(top, #f5f5f5 5%, #ededed 100%);
+  background:linear-gradient(to bottom, #f5f5f5 5%, #ededed 100%);
+  background:-webkit-linear-gradient(top, #f5f5f5 5%, #ededed 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#ededed',GradientType=0);
+}

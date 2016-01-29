@@ -1,0 +1,228 @@
+@CHARSET "UTF-8";
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background: #f2f4f8;
+}
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+    display: block;
+    height: 12px;
+    background-color: #d5d9df;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    height: 25px;
+    background-color: #d5d9df;
+}
+
+::-webkit-scrollbar-button:start:decrement {
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+}
+
+::-webkit-scrollbar-button:end:increment {
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+}
+
+:focus {
+    border: none;
+    outline: 0;
+}
+
+.notepadPanel {
+	margin-bottom: 18px;	
+}
+
+.stack {   
+	width: 95%;
+	height: 721px;
+	margin-top: 10px;	
+    padding-bottom: 12px;
+
+ 
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    
+    -webkit-box-shadow: 0px 0px 9px rgba(121,126,133, 0.15);
+    -moz-box-shadow: 0px 0px 9px rgba(121,126,133, 0.15);
+    box-shadow: 0px 0px 9px rgba(121,126,133, 0.15);
+}
+
+    .stack .layer_1 {
+        background-color: #fdfeff;
+		height: 100%;
+        
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        
+        -webkit-box-shadow: 0px 1px 2px rgba(80,83,87, 0.25);
+        -moz-box-shadow: 0px 1px 2px rgba(80,83,87, 0.25);
+        box-shadow: 0px 1px 2px rgba(80,83,87, 0.25);
+    }
+    
+        .stack .layer_1 .layer_2 {
+            background-color: #fdfeff;
+			height: 100%;
+            
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            
+            -webkit-box-shadow: 0px 1px 0 rgba(61,64,67, 0.2);
+            -moz-box-shadow: 0px 1px 0 rgba(61,64,67, 0.2);
+            box-shadow: 0px 1px 0 rgba(61,64,67, 0.2);
+        }
+        
+            .stack .layer_1 .layer_2 .layer_3 {
+                background-color: #fdfeff;
+				height: 100%;
+                border: 1px solid #dcdde1;
+                padding: 5px 5px;
+                
+                font: normal 15px Arial, Helvetica, sans-serif;
+                line-height: 20px;
+                color: #3a3b3c;
+                
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                border-radius: 3px;
+            }
+            
+                .stack .layer_1 .layer_2 .layer_3 .contents {
+					height: 725px; /*For IE6/7*/
+					/*height: 100%;*/
+                    width: 99.7%;
+                    margin: 0;
+                    padding: 0 6px 0 0;
+                    border: 1px solid transparent;
+                    background: transparent;
+                    resize: none;
+                    overflow-x: hidden;
+                    overflow-y: auto;
+                    /*white-space: pre-wrap; 换行控制*/
+                    
+                    font: normal 13px Arial, Helvetica, sans-serif;
+                    line-height: 20px;
+                    color: #3a3b3c;
+                }
+                
+                .stack .layer_1 .layer_2 .layer_3 .contents.monospace {
+                    font: normal 12px Monaco, 'Courier New', monospace;
+                    line-height: 18px;
+                }
+.stack.empty .layer_1 .layer_2 .layer_3 .contents {
+    text-align: center;
+    font: normal 18px Arial, sans-serif;
+    color: #aaacb0;
+}
+
+.titleDiv {
+	padding-top:10px;	
+	
+    overflow: hidden;
+    padding-left: 22px;
+}
+
+.note {
+	overflow: hidden;
+	padding-top:5px;
+	float: left;
+	width: 146px;
+	height: 34px;
+	margin-left: -1.6px;
+}
+
+.note img {	
+	float: left;
+	
+	width: 12px;
+	height: 0px;
+	/*display:none;*/
+	position: relative;
+	left: -8px;
+	top: -4px;
+	display: block;
+}
+
+.addnote {
+	/*padding-right: 12px;*/
+}
+
+.addnote a {
+	font-size:23px;
+	
+}
+
+
+/*格式化按钮 start*/
+.noteTitle{
+  float: left;
+  line-height:25px;
+  cursor: default;
+  height:25px;
+  width: 122px;
+  color:#777777;
+  padding: 0px 5px 2px 5px;
+  background-color:#ededed;
+  font-size:14px;
+  font-weight:normal;
+  font-family: 'Microsoft YaHei', Arial, Helvetica, sans-serif;
+  background:-webkit-gradient(linear, left top, left bottom, color-start(0.05, #ededed), color-stop(1, #f5f5f5));
+  background:-moz-linear-gradient(top, #ededed 5%, #f5f5f5 100%);
+  background:-o-linear-gradient(top, #ededed 5%, #f5f5f5 100%);
+  background:-ms-linear-gradient(top, #ededed 5%, #f5f5f5 100%);
+  background:linear-gradient(to bottom, #ededed 5%, #f5f5f5 100%);
+  background:-webkit-linear-gradient(top, #ededed 5%, #f5f5f5 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#f5f5f5',GradientType=0);
+  border:1px solid #dcdcdc;
+  -webkit-border-top-left-radius:4px;
+  -moz-border-radius-topleft:4px;
+  border-top-left-radius:4px;
+  -webkit-border-top-right-radius:4px;
+  -moz-border-radius-topright:4px;
+  border-top-right-radius:4px;
+  -webkit-border-bottom-left-radius:4px;
+  -moz-border-radius-bottomleft:4px;
+  border-bottom-left-radius:4px;
+  -webkit-border-bottom-right-radius:4px;
+  -moz-border-radius-bottomright:4px;
+  border-bottom-right-radius:4px;
+  -moz-box-shadow: inset 0px 0px 0px 0px #ffffff;
+  -webkit-box-shadow: inset 0px 0px 0px 0px #ffffff;
+  box-shadow: inset 0px 0px 0px 0px #ffffff;
+  text-align:center;
+  display:inline-block;
+  text-decoration:none;
+}
+
+.highlightTitle{
+  background:-webkit-gradient(linear, left top, left bottom, color-start(0.05, #ededed), color-stop(1, #C5ECE7));
+  background:-moz-linear-gradient(top, #ededed 5%, #C5ECE7 100%);
+  background:-o-linear-gradient(top, #ededed 5%, #C5ECE7 100%);
+  background:-ms-linear-gradient(top, #ededed 5%, #C5ECE7 100%);
+  background:linear-gradient(to bottom, #ededed 5%, #C5ECE7 100%);
+  background:-webkit-linear-gradient(top, #ededed 5%, #C5ECE7 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#C5ECE7',GradientType=0);
+}
+
+.noteTitle:hover{
+  background-color:#f5f5f5;
+  background:-webkit-gradient(linear, left top, left bottom, color-start(0.05, #f5f5f5), color-stop(1, #ededed));
+  background:-moz-linear-gradient(top, #f5f5f5 5%, #ededed 100%);
+  background:-o-linear-gradient(top, #f5f5f5 5%, #ededed 100%);
+  background:-ms-linear-gradient(top, #f5f5f5 5%, #ededed 100%);
+  background:linear-gradient(to bottom, #f5f5f5 5%, #ededed 100%);
+  background:-webkit-linear-gradient(top, #f5f5f5 5%, #ededed 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#ededed',GradientType=0);
+}
+/*格式化按钮 end*/
+
